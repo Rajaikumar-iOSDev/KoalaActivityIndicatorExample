@@ -11,6 +11,8 @@ If you have any issues or if you need any feature, create an issue and let me kn
 
 #### Swift Package Manager
 
+Xcode > File > Swift Packages > Add Package Dependency > Select your project > enter package dependency URL
+
 ##### URL - https://github.com/Rajaikumar-iOSDev/KoalaActivityIndicator.git
 
 ### Tech stack
