@@ -7,6 +7,11 @@ An example project using the KoalaActivityIndicator.
 KoalaActivityIndicator is created for people who loves koala🐨💙 and wants to add a non boring version of activity indicator.
 If you have any issues or if you need any feature, create an issue and let me know.
 
+## Sample 
+
+
+![1](https://github.com/Rajaikumar-iOSDev/KoalaActivityIndicatorExample/blob/main/Koala%20Activity%20Indicator.gif)
+
 ## Installation Guide
 
 ### Swift Package Manager
@@ -36,9 +41,4 @@ Step 4: Call addKoalaAnimation() using the outlet.
 ## Tech stack
 
 Xcode, UIKit & SpriteKit.
-
-## Sample 
-
-
-![1](https://github.com/Rajaikumar-iOSDev/KoalaActivityIndicatorExample/blob/main/Koala%20Activity%20Indicator.gif)
 
