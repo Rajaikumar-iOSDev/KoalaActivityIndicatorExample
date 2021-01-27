@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KoalaActivityIndicatorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-tV-XoU">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kR0-fU-nFn">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="phy-N7-np4">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqg-Om-G7c" customClass="KoalaLoaderView" customModule="KoalaActivityIndicator">
+                                            <rect key="frame" x="102.5" y="593.5" width="819" height="179"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </skView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wqg-Om-G7c" firstAttribute="width" secondItem="phy-N7-np4" secondAttribute="width" multiplier="0.8" id="EHY-1R-CrL"/>
+                                        <constraint firstItem="wqg-Om-G7c" firstAttribute="height" secondItem="phy-N7-np4" secondAttribute="height" multiplier="0.13104" id="ZDW-L2-jBk"/>
+                                        <constraint firstItem="wqg-Om-G7c" firstAttribute="centerY" secondItem="phy-N7-np4" secondAttribute="centerY" id="lU2-Ro-jCg"/>
+                                        <constraint firstItem="wqg-Om-G7c" firstAttribute="centerX" secondItem="phy-N7-np4" secondAttribute="centerX" id="wIy-n8-fZG"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wUl-tV-XoU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="1A8-M0-y6P"/>
+                            <constraint firstItem="kR0-fU-nFn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="74N-FQ-1ex"/>
+                            <constraint firstItem="kR0-fU-nFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6N-jf-w0s"/>
+                            <constraint firstItem="kR0-fU-nFn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O6s-CD-Dzj"/>
+                            <constraint firstItem="wUl-tV-XoU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SwD-XD-gbf"/>
+                            <constraint firstItem="wUl-tV-XoU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUb-Gy-R7U"/>
+                            <constraint firstItem="wUl-tV-XoU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hgb-fu-88K"/>
+                            <constraint firstItem="kR0-fU-nFn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mcx-iB-lAb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="koalaLoaderView" destination="wqg-Om-G7c" id="oIZ-Cc-2Fi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="152" height="331"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
