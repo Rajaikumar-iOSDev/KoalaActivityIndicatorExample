@@ -42,3 +42,7 @@ Step 4: Call addKoalaAnimation() using the outlet.
 
 Xcode, UIKit & SpriteKit.
 
+## Special thanks for the assets
+
+https://www.gameartguppy.com & Vicki Wenderlich
+
