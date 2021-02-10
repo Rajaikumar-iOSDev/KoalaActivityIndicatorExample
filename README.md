@@ -1,8 +1,8 @@
-# KoalaActivityIndicatorExample
+# 🐨KoalaActivityIndicatorExample
 
 An example project using the KoalaActivityIndicator. 
 
-## KoalaActivityIndicator
+## 🐨KoalaActivityIndicator
 
 KoalaActivityIndicator is created for people who loves koala🐨💙 and wants to add a non boring version of activity indicator.
 If you have any issues or if you need any feature, create an issue and let me know.
