@@ -32,11 +32,15 @@ Step 2: Change the class name in the Identity inspector to KoalaLoaderView.
 
 Step 3: Create an IBOutlet for the SKView from the storyboard
 
-![Screenshot 2021-01-28 at 2 06 32 AM](https://user-images.githubusercontent.com/22410262/106051213-2bf75d00-610e-11eb-92af-5e4b452e02e4.png)
+```Swift
+@IBOutlet weak var koalaLoaderView: KoalaLoaderView!
+```
 
 Step 4: Call addKoalaAnimation() using the outlet.
 
-![Screenshot 2021-01-28 at 2 07 00 AM](https://user-images.githubusercontent.com/22410262/106051144-1124e880-610e-11eb-80f3-3b4d16403ef6.png)
+```Swift
+koalaLoaderView.addKoalaAnimation()
+```
 
 ## 🥞Tech stack
 
